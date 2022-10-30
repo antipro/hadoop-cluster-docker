@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER KiwenLau <kiwenlau@gmail.com>
+MAINTAINER Zhang <antiproster@gmail.com>
 
 WORKDIR /root
 
@@ -48,4 +48,3 @@ RUN chmod +x ~/start-hadoop.sh && \
 RUN /usr/local/hadoop/bin/hdfs namenode -format
 
 CMD [ "sh", "-c", "service ssh start; /root/start-hadoop.sh; bash"]
-
